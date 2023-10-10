@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(231, 249, 255);
+            font-family: 'K2D', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .line-frame {
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+            background-color: white;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: auto;
+            border-radius: 30%;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
+        }
+
+        .name {
+            margin-top: 5%;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        .contact-list {
+            display: flex;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-list li {
+            margin-right: 10px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .contact-link {
+            color: black;
+            margin-top: 10px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .contact-link:hover {
+            background-color: rgb(0, 140, 255);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .contact-link.fb {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .contact-link.ig {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .contact-link.email {
+            background-color: rgb(255, 255, 255);
+        }
+        .contact-link.fb:hover {
+            background-color: rgb(59, 89, 152);
+        }
+
+        .contact-link.ig:hover {
+            background-color: rgb(180, 41, 138);
+        }
+
+        .contact-link.email:hover {
+            background-color: rgb(126, 45, 180);
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .icon-gmail {
+            width: 35px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="line-frame">
+            <div class="section">
+                <div class="infomation">
+                    <img src="https://scontent-kul2-2.xx.fbcdn.net/v/t39.30808-6/303023358_3363141183904809_3590872667825617121_n.jpg?_nc_cat=103&cb=99be929b-3346023f&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGWAOW3L_inQ4315BEjrVDwOwnE9-CTBFM7CcT34JMEU_9gMoHMYJjOfL249RplsrkVdYtp6EkZGwl2KJSLDDAS&_nc_ohc=lp_mAG9SG34AX8qpy2e&_nc_ht=scontent-kul2-2.xx&oh=00_AfAVf3OeGqg3byU43s4AVYiBUT2EtNxIsrOBM5eqg4020A&oe=64B9AB1E"
+                        alt="Profile Image" class="profile-image">
+                    <ul>
+                        <li class="name">Siriyaporn Jittawee</li>
+                        <li><span class="title">Nickname: </span>Earn</li>
+                        <li><span class="title">Date of Birth: </span>10/08/2001</li>
+                        <li><span class="title">Age: </span>21</li>
+                    </ul><br>
+                </div>
+            </div>
+
+            <div class="section">
+                <hr class="title-separator">
+                <h2>Education</h2>
+                <ul>
+                    <li><span class="title">Degree:</span> Bachelor of Engineering Program in Computer Engineering and
+                        Informatics</li>
+                    <li><span class="title">University:</span> Kasetsart University Sriracha Campus</li>
+                    <li><span class="title">Date:</span> July 2020 - Present</li>
+                </ul><br>
+            </div>
+
+            <div class="section">
+                <hr class="title-separator">
+                <h2>Programming Skills</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Flutter for Application Developer</li>
+                    <li>React-Native for Application Developer</li>
+                </ul><br>
+            </div>
+
+            <div class="section">
+                <hr class="title-separator">
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Watching series</li>
+                    <li>Sleeping in the bed</li>
+                </ul><br>
+            </div>
+
+            <div class="section">
+                <hr class="title-separator">
+                <h2>Contacts</h2>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://www.facebook.com/nhooearn" target="_blank" class="contact-link fb">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
+                                alt="Facebook Icon" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nhooearn/" target="_blank" class="contact-link ig">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png"
+                                alt="Instagram Icon" class="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:siri.keepp@gmail.com" class="contact-link email">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                                alt="Email Icon" class="icon-gmail">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

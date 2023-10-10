@@ -259,4 +259,8 @@ const wordList = [
         word: "brilliant",
         hint: "Exceptionally clever, talented, or impressive."
     },
+    {
+        word: "pyramids",
+        hint: "A famous landmark in Egypt."
+    },
 ];
